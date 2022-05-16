@@ -17,6 +17,7 @@ import Login from './Components/Login';
 import Register from './Components/Register'
 import Magz from './Components/videos/magazines';
 import Vids from './Components/videos/videos';
+import Single from './Components/videos/blog'
 
 
 function App() {

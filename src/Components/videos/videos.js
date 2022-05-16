@@ -17,6 +17,7 @@ function Vids() {
   const fetchVideos = async () => {
     const response = await axios.get('https://videos-backends.herokuapp.com/videos');
     setvideos(response.data)
+    console.log(response.data)
   };
 
   useEffect(() => {
