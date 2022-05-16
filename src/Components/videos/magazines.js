@@ -3,7 +3,8 @@ import './video.css'
 import Slider from "react-slick";
 import axios from 'axios';
 import {Grid,Divider,List,ListItem,ListItemButton,ListItemText} from '@mui/material';
-
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar';
 
 import "slick-carousel/slick/slick.css";
 
@@ -63,7 +64,10 @@ const Magz = () => {
   }, [])
 
   return (
+    <>
+    <Navbar />
     <div style={{  padding:"5%" }}>
+      <h2>Digital Magazines</h2>
         <Grid  fullWidth container spacing={4}>
                     <Grid item sm={12} md={6} lg={4}  >
    
@@ -105,6 +109,8 @@ const Magz = () => {
   </Grid>
   </Grid>
     </div>
+    <Footer/>
+    </>
   );
 };
 export default Magz;

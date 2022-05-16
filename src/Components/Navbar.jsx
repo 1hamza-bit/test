@@ -32,10 +32,10 @@ const Navbar = (props) => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Magazines">Movies</Link>
+              <Link to="/Videos ">Movies</Link>
             </li>
             <li>
-              <Link to="/Videos">Digital magazines</Link>
+              <Link to="/Magazines">Digital magazines</Link>
             </li>
             <li>
               <Link to="/">Screenplays</Link>
