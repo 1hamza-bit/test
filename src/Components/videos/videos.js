@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
 import {Grid,Divider,List,ListItem,ListItemButton,ListItemText} from '@mui/material';
-
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar';
  
 function Vids() {
 
@@ -58,24 +59,28 @@ function Vids() {
     };
 
   return (
+    <>
+    <Navbar/>
    <div style={{padding: "3%"}}>
-
+<h2>Movies</h2>
 <Grid  fullWidth container spacing={4}>
                     <Grid item sm={12} md={6} lg={4}  >
    
 
         {
-          videos &&
+          videos.length > 0 ? 
           videos.map(video => 
             <div>
               <Card video={video}/>
             </div>
             )
-        }
+        : <div style={{padding: "5%", color: ""}}><h3>Sorry there is no Data avaliable</h3></div>}
        
        </Grid>
         </Grid>
     </div>
+    <Footer/>
+    </>
   );
 }
 
